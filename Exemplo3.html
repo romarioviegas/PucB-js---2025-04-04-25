@@ -4,17 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+        }
+        .cartao{
+            border: 1px solid rgb(141, 79, 79);
+            width: 14rem;
+            height: 15rem;
+            padding: 1rem;
+            margin: 2rem auto;
+            box-shadow: .5rem .5rem .3rem .01rem rgb(4, 255, 4);
+            background-color: black;
+            color:rgb(6, 255, 6) ;
+        }
+
+     img{
+        height: 9rem;
+        width: 14rem;
+     }
+
+     .preco{
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-align: right;
+     }
+
+    </style>
 </head>
 <body>
+    <div class="cartao">
     <script>
         /*estrutura sequencial
         /*comandos de saida
         /*declaração de variaveis
         */
-       var produto = prompt("Informe o nome do produto: ");
-       document.write("Produto : "+produto);
-       alert("Produto : "+produto);
-       console.log("Profuto : " +produto);
+       var produto = prompt("Informe adescrição produto: ");
+       var produto = prompt("Informe a adescrição produto: ");
+       var preco = prompt("Informe i preço do produto: ");
+
+       document.write(`<img src="image.png" alt='Logo de supermercado'>`);
+       document.write(`<h1 class="titulo">${produto}</h1>`);
+       document.write(`<carticle class "descrição">${descrição}</article>`);
+       document.write(`aside class: "preco">${preco}</aside`);
+
+       document.write('Produto : "+produto');
+       
     </script>
+    </div>
 </body>
 </html>
